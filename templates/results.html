@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Information</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/results.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="weatherResults">
+    <h2>Weather in {{ current_city }} , {{ territory }}</h2>
+    <h3>{{ temp_celsius }}° C</h3>
+    <h2>{{ current_weather }}</h2>
+    <h3>Humidity: {{ damp }}%</h3>
+    <h3>Wind Speed : {{ Wind }} m/s</h3>
+</div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='static/styles/home.css') }}">
+</head>
+<body>
+<h2>Weather Dashboard</h2>
+<form id="weatherForm" action="{{ url_for('search_city') }}" method="post">
+    City Name: <input id="weatherInput" type="text" name="location"><br>
+    Country Name: <input id="weatherInput" type="text" name="country"><br>
+    <input id="weatherSubmit" type="submit" value="Submit">
+</form>
+</body>
+</html>
